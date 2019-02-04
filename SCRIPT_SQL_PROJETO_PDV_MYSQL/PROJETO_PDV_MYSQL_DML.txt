@@ -1,0 +1,28 @@
+CREATE DATABASE dbpdv;
+
+
+USE dbpdv;
+
+
+
+CREATE TABLE tb_produto (
+
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+
+preco DOUBLE NOT NULL,
+
+nome VARCHAR(200) NOT NULL,
+
+qtnEstoque INT NOT NULL
+);
+
+
+CREATE TABLE tb_funcionarios(
+
+login varchar(20),
+
+senha varchar(20),
+
+cargo varchar(20)
+
+);

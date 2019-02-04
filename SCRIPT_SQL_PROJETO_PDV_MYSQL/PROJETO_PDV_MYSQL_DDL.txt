@@ -1,0 +1,15 @@
+use varejoPDV;
+
+
+
+INSERT INTO tb_funcionarios (login, senha, cargo) VALUE ('teste1', '123', 'gerente');
+
+INSERT INTO tb_funcionarios (login, senha, cargo) VALUE ('teste2', '123', 'vendedor');
+
+
+
+INSERT INTO tb_produto (preco, nome, qtnEstoque) VALUE ('2.0', 'maça','20');
+
+INSERT INTO tb_produto (preco, nome, qtnEstoque) VALUE ('1.0', 'banana', '20');
+
+INSERT INTO tb_produto (preco, nome, qtnEstoque) VALUE ('3.0', 'laranja', '30');
