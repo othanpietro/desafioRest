@@ -18,6 +18,9 @@
 				<li class="nav-item"> 
 					<a class="nav-link" href="contexto-vendedor.jsp">Home</a>
 				</li>
+				<li class="nav-item"> 
+					<a class="nav-link" href="ListarProdutosVenda">Iniciar Venda</a>
+				</li>
 			</ul>
 		</div>
 			<a class="btn btn-outline-primary my-2 my-sm-0" href="index.html">Sair</a>

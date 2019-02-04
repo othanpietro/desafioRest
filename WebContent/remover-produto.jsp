@@ -5,12 +5,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Remover Produto</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+            <li class="nav-item"> 
+                  <a class="nav-link" href="contexto-gerente.jsp">Home</a>
+               </li>
                <li class="nav-item"> 
                   <a class="nav-link" href="cadastro-produtos.html">Cadastrar Produtos</a>
                </li>
@@ -21,15 +26,21 @@
          </div>
          <a class="btn btn-outline-primary my-2 my-sm-0" href="index.html">Sair</a>
       </nav>
-<form action="RemoverProduto" method="POST"> 
-	<label>Nome: </label>
-	<p><c:out value="${produto.nome}"></c:out></p>
-	<label>Quantidade: </label>
-	<input type="text" value="<c:out value="${produto.qtnEstoque}"></c:out>" name="qtnProdutos">
-	<input hidden="true" type="text" value="<c:out value="${produto.id}"></c:out>" name="id">
-	<input type="submit">
-</form>
-
+	<form action="RemoverProduto" method="POST"> 
+		<div class="form-group col-sm-6">
+			<span>Nome do Produto : </span> 
+			<span class="font-weight-bold"><c:out value="${produto.nome}"></c:out></span>
+		</div>
+		<div class="form-group col-sm-3">
+			<label>Quantidade que deseja remover: </label>
+			<input class="form-control" type="text" value="<c:out value="${produto.qtnEstoque}"></c:out>" name="qtnProdutos">
+		</div>
+		<input hidden="true" type="text" value="<c:out value="${produto.id}"></c:out>" name="id">
+		<div class="d-flex">
+	          <div class="p-3">
+	               <button type="submit" class="btn btn-primary">Submit</button>
+	          </div>
+	     </div>
+	</form>
 </body>
-
 </html>

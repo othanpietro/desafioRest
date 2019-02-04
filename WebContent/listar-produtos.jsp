@@ -4,17 +4,20 @@
  <%@ page import="controllers.ControllerProduto" %>
  <jsp:useBean id="controller" class="controllers.ControllerProduto"/>
 <!DOCTYPE html>
-	<html>
-		<head>
+<html>
+	<head>
 		<meta charset="ISO-8859-1">
 		<title>Lista de Produto</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		</head>
+	</head>
 		<body>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav"> 
+				<ul class="navbar-nav">
+					<li class="nav-item"> 
+                  		<a class="nav-link" href="contexto-gerente.jsp">Home</a>
+               		</li> 
 					<li class="nav-item"> 
 						<a class="nav-link" href="cadastro-produtos.html">Cadastrar Produtos</a>
 					</li>
@@ -45,4 +48,4 @@
 			  </c:forEach>
 			</table>
 		</body>
-	</html>
+</html>
